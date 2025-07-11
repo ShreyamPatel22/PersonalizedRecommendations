@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Movie Recommender</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <h1>Movie Recommendation System</h1>
+
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton" onclick="searchMovies()">Search</button>
+        </div>
+
+        <h2>Search Results</h2>
+        <ul id="searchResults" class="movie-list"></ul>
+
+        <h2>Your Liked Movies</h2>
+        <ul id="likedMovies" class="movie-list"></ul>
+
+        <button onclick="getRecommendations()">Get Recommendations</button>
+        <h2>Recommendations</h2>
+        <ul id="recommendations" class="movie-list"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>

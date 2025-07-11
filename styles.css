@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif; /* Set a clean, readable font */
+    background: linear-gradient(135deg, #121212, #1e1e1e); /* Smooth gradient background */
+    color: white; /* White text for contrast */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Center all text content */
+}
+
+/* Search Bar Styling */
+#searchContainer {
+    margin-bottom: 20px; /* Space below the search bar */
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+#searchInput {
+    padding: 12px;
+    width: 60%;
+    border: 2px solid #1DB954;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #222;
+    color: white;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #1ed760; /* Lighter green on focus */
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.6);
+}
+
+#searchButton {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#searchButton:hover {
+    background-color: #17a74a;
+    transform: scale(1.05); /* Slight bounce effect */
+}
+
+/* Movie Lists Styling */
+.movie-list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.movie-list li {
+    background-color: #222;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    transform: scale(0.95);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards; /* Pop-in effect */
+}
+
+.movie-list li:hover {
+    background-color: #333;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+/* Like Button Styling */
+button {
+    padding: 8px 15px;
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #17a74a;
+    transform: scale(1.1);
+}
+
+/* Section Titles Styling */
+h2 {
+    color: #1DB954;
+    font-size: 24px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#searchInput:focus {
+    border-color: #1ed760; /* Lighter green on focus */
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.6); /* Glow effect */
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    transform: scale(1.05); /* Slight bounce effect */
+}
